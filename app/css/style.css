@@ -1,0 +1,280 @@
+/* 
+	Contact Card Style
+*/
+.contact-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+.contact-card-email {
+  color: grey;
+  font-size: 18px;
+}
+.contact-card-button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+  font-size: 10px;
+}
+.buttons-links {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+}
+.contact-card-button:hover, .buttons-links:hover {
+  opacity: 0.7;
+}
+/* End of Contact Card Style */
+
+
+/*
+	Product Cards Style
+*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    max-height: 800px;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: right;
+    font-family: arial;
+  }
+  
+.product-img{
+    height: 200px;
+    width: 250px;
+    padding: 10px;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+  
+.select-button {
+    border: none;
+    outline: 0;
+    margin-bottom: 0px;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+  
+.select-button:hover {
+    opacity: 0.7;
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+  
+  /* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: white;
+    color: black;
+ }
+  
+/* Style the back side */
+.flip-card-back {
+    background-color: #bbb;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.view-button{
+    border: none;
+    padding: 12px;
+    margin: 50px 30px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.view-link:link, .view-link:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.view-button:hover {
+    opacity: 0.7;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 10%;
+  height: 100%;
+
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+/* .tab button:hover {
+  background-color: #ddd;
+} */
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  top: 0 !important;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 90%;
+  border-left: none;
+  height: 100%;
+}
+
+
+.contaner{
+    height: 100%;
+}
+
+/* Drop down style */
+
+
+/* My Edits Here */
+
+.form-check.protype{
+  display: inline-block;
+}
+
+
+#other_products_container{
+  display: none;
+}
+
+.alert{
+  display: none;
+}
+
+#product-type{
+  position:relative;
+  overflow: scroll;
+}
+
+#productNextButton{
+  margin-left: 75%;
+}
+
+#contactNextButton{
+  position: absolute;
+  right:  30;
+  bottom: 50;
+}
+
+.recButtonDel {
+  color: white;
+  background-color: Red;
+  border: solid 1px red;
+  /* display: inline-block; */
+  /* text-align: center; */
+  font-size: 15;
+  border-radius: 5px;
+  padding: 0px 5px 0px 5px;
+  margin: 0px 5px 0px 5px;
+  cursor: pointer;
+  width: 20px;
+  font-weight: bolder;
+}
+
+.recButtonDel:hover {
+  color: #ff0000;
+  background-color: white;
+}
+
+.recButtonDel:active {
+  background-color: #ff3333;
+  color: white
+}
+
+
+/* add new button */
+.newItemBtn {
+  color: white;
+  background-color: #198754;
+  border: solid 1px #198754;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 90px;
+  height: 30px;
+  font-weight: bolder;
+}
+
+.newItemBtn:hover {
+  color: white;
+  background-color: #157347;
+}
+
+.newItemBtn:active {
+  background-color: #09ae61;
+  color: white
+}
